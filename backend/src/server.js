@@ -21,7 +21,7 @@ app.use("/api", limiter);
 
 // Hello world endpoint
 app.get("/api/hello", (req, res) => {
-  res.json({ message: "Hello World!" });
+  res.json({ message: "Hello frontend!" });
 });
 
 // Error handling middleware
