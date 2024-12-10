@@ -1,0 +1,43 @@
+{
+  "name": "simmerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "node frontend/webpack/clean-dist.js",
+    "build": "npm run clean && webpack --config frontend/webpack/webpack.config.js --mode production && node frontend/webpack/update-index.js prod",
+    "predev": "npm run clean && node frontend/webpack/update-index.js dev",
+    "dev": "webpack --config frontend/webpack/webpack.config.js --mode development --watch",
+    "dev-server": "concurrently \"nodemon --exec npm run lint:server\" \"node backend/src/server.js\"",
+    "lint": "eslint --config frontend/webpack/eslint.config.js .",
+    "lint:server": "eslint --config backend/lint/eslint.config.js backend/src/server.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/eslint-parser": "^7.25.9",
+    "@babel/preset-env": "^7.24.0",
+    "@eslint/js": "^9.15.0",
+    "babel-loader": "^9.1.3",
+    "browser-sync": "^2.29.3",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "concurrently": "^8.2.2",
+    "css-loader": "^7.1.2",
+    "eslint": "^9.15.0",
+    "eslint-webpack-plugin": "^4.2.0",
+    "globals": "^15.12.0",
+    "mini-css-extract-plugin": "^2.9.2",
+    "nodemon": "^3.1.7",
+    "prettier": "^3.3.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.4.1",
+    "jszip": "^3.10.1"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules
+frontend/dist/js
+frontend/dist/css
+package-lock.json
+backend/.env
+projects/*
+!projects/.gitkeep
