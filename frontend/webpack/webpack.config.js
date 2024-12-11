@@ -59,7 +59,7 @@ module.exports = (env, argv) => {
           files: ["dist/**/*.*"],
         },
         {
-          reload: false,
+          reload: true,
         }
       ),
       new MiniCssExtractPlugin({
