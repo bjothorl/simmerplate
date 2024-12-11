@@ -1,6 +1,6 @@
 {
   "name": "simmerplate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "clean": "node frontend/webpack/clean-dist.js",
     "build": "npm run clean && webpack --config frontend/webpack/webpack.config.js --mode production && node frontend/webpack/update-index.js prod",
