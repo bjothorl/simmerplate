@@ -2,7 +2,7 @@
 import "./css/app.css";
 
 // Hello world!
-document.getElementById("title").innerText = "Hello Simmerplate 🍳";
+document.getElementById("title").innerText = "Hello Simmerplate 🍳!";
 
 document.getElementById("helloBackendButton").addEventListener("click", () => {
   fetch("/api/hello")
