@@ -10,3 +10,6 @@
 
 1.0.3
 -   `npm update` and `npm audit fix --force`
+
+1.0.4
+-   Fix npm audit vulnerabilities
