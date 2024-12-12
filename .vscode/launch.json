@@ -13,7 +13,8 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "envFile": "${workspaceFolder}/backend/.env"
+            "envFile": "${workspaceFolder}/backend/.env",
+            "args": ["--watch", "backend/src/"]
         }
     ]
 } 
