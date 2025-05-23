@@ -99,3 +99,29 @@ project-root/
 │
 └── package.json
 ```
+
+## Templates
+
+Simmerplate comes with additional templates to customize your setup:
+
+### React + TypeScript Template
+
+Convert your project to use React with TypeScript:
+
+```bash
+node simmerplate-templates/react-typescript.js
+```
+
+This template will:
+- Install TypeScript and React dependencies
+- Configure Babel for TypeScript and React
+- Create a `tsconfig.json` with optimal settings
+- Convert the main app to React components
+- Set up a sample `TestButton` component
+- Update webpack configuration for TypeScript files
+
+After running the template:
+1. Start the dev server: `npm run dev-server`
+2. Start the frontend build: `npm run dev`
+
+The React + TypeScript template maintains all the core features (hot reloading, bundling, etc.) while providing type safety and modern React development patterns.
