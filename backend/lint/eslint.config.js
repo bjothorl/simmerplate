@@ -4,7 +4,7 @@ import globals from "globals";
 export default [
   {
     // Backend files
-    files: ["backend/src/server.js"],
+    files: ["backend/src/**/*.js"],
     languageOptions: {
       sourceType: "commonjs",
       globals: {

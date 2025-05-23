@@ -20,6 +20,8 @@ export default [
         document: true,
         require: true,
         navigator: true,
+        __dirname: true,
+        process: true,
       },
       parserOptions: {
         requireConfigFile: false,

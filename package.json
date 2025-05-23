@@ -7,8 +7,8 @@
     "predev": "npm run clean && node frontend/webpack/update-index.js dev",
     "dev": "webpack --config frontend/webpack/webpack.config.js --mode development --watch",
     "dev-server": "concurrently \"nodemon --watch backend/src/ --exec npm run lint:server\" \"nodemon --watch backend/src/ backend/src/server.js\"",
-    "lint": "eslint --config frontend/webpack/eslint.config.js .",
-    "lint:server": "eslint --config backend/lint/eslint.config.js backend/src/server.js"
+    "lint": "eslint --config frontend/webpack/eslint.config.js",
+    "lint:server": "eslint --config backend/lint/eslint.config.js"
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",

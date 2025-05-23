@@ -124,7 +124,7 @@ if (!rootElement) {
 createRoot(rootElement).render(
     <StrictMode>
       <div className="container">
-        <h1 id="title">Simmerplate 🍳<br>(React, TypeScript)</h1>
+        <h1 id="title">Simmerplate 🍳<br />(React, TypeScript)</h1>
         <TestButton />
       </div>
     </StrictMode>
