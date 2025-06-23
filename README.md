@@ -125,3 +125,24 @@ After running the template:
 2. Start the frontend build: `npm run dev`
 
 The React + TypeScript template maintains all the core features (hot reloading, bundling, etc.) while providing type safety and modern React development patterns.
+
+### Node.js + TypeScript Template
+
+Convert your project's back-end to use TypeScript:
+
+```bash
+node simmerplate-templates/node-ts.js
+```
+
+This template will:
+- Install TypeScript and back-end specific dependencies
+- Create a `tsconfig.json` for the back-end
+- Update the ESLint configuration for TypeScript
+- Convert `server.js` to `server.ts`
+- Update `package.json` scripts for development, linting, building, and running the TypeScript server
+
+After running the template, you can use the following scripts:
+- `npm run dev-server`: Start the development server with hot-reloading.
+- `npm run lint:server`: Lint the back-end TypeScript files.
+- `npm run build:server`: Build the back-end for production.
+- `npm run start:server`: Run the production-ready back-end.
